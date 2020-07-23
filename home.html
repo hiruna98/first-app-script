@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+ <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+   <?!= include("doctor-css");?>
+  <head>
+    <base target="_top">
+  </head>
+  <body class="body">
+  <div class="container">
+       <div class="row">
+            <h4>Hospital Management System</h4>
+       </div>
+      
+       <div class="row">
+           <a href="<?= ScriptApp.getService().getUrl();?>?v=doctor-add" class="waves-effect waves-light btn col s6" id="btn"><i class="material-icons right">send</i>Add Doctor</a>
+       </div>
+       <div class="row">
+           <a href="<?= ScriptApp.getService().getUrl();?>?v=patient-add" class="waves-effect waves-light btn col s6" id="btn"><i class="material-icons right">send</i>Add Patient</a>
+       </div>
+       <div class="row">
+           <a href="<?= ScriptApp.getService().getUrl();?>?v=doctor-table" class="waves-effect waves-light btn col s6" id="btn"><i class="material-icons right">send</i>Available Doctors</a>
+       </div>
+       <div class="row">
+           <a href="<?= ScriptApp.getService().getUrl();?>?v=patient-table" class="waves-effect waves-light btn col s6" id="btn"><i class="material-icons right">send</i>Current Patients</a>
+       </div>
+  </div>
+ 
+  
+  </body>
+   <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+</html>
+
+

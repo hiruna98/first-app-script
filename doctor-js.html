@@ -1,0 +1,30 @@
+<script>
+
+        document.addEventListener('DOMContentLoaded', function() {
+           var elems = document.querySelectorAll('select');
+           var instances = M.FormSelect.init(elems);
+        });
+        document.getElementById("btn").addEventListener("click",doStuffdoc);
+        function doStuffdoc(){
+            var info = {};
+            info.name = document.getElementById("name").value;
+            info.spl = document.getElementById("spl").value;
+            info.gender = document.getElementById("gender").value;
+            info.contact = document.getElementById("contact").value;
+            info.from = document.getElementById("from").value;
+            info.upto = document.getElementById("upto").value;
+            
+            
+            google.script.run.submitdoc(info);
+            document.getElementById("name").value = "";
+            document.getElementById("spl").value = "";
+            var g = document.getElementById("gender");
+            g.selectedIndex = 0;
+            M.FormSelect.init(g);
+            document.getElementById("from").value = "";
+            document.getElementById("upto").value = "";
+            document.getElementById("contact").value = "";
+        }
+   
+        
+  </script>

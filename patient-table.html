@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+ <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+   <?!= include("patient-table-css");?>
+  <head>
+    <base target="_top">
+  </head>
+  <body class="body">
+  <div class="container">
+       <div class="row">
+            <h4>Doctor</h4>
+       </div>
+       <div class="row">
+            <div class="col s12">
+              <table class="striped">
+                 <thead>
+                    <tr>
+                       <th>Name</th>
+                       <th>Age</th>
+                       <th>Gender</th>
+                       <th>Contact Number</th>
+                       <th>Disease</th>
+                       <th>Email</th>
+                    </tr>
+                 </thead>
+
+                 <tbody id="table-body">
+                    
+                 </tbody>
+             </table>
+            </div>
+           
+       </div>
+       
+  </div>
+ 
+  
+  </body>
+  <?!= include("patient-table-js");?>
+   <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+</html>
+
+
